@@ -1,0 +1,91 @@
+/* login.css */
+
+.background {
+    -fx-background-color: #f5f5f5;
+}
+
+.background-container {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+}
+
+.brand-name {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);
+}
+
+.brand-tagline {
+    -fx-text-fill: #e8e8e8;
+    -fx-font-style: italic;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 3, 0, 0, 0);
+}
+
+.login-panel {
+    -fx-background-color: white;
+    -fx-background-radius: 0px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.welcome-text {
+    -fx-text-fill: #3c2415;
+}
+
+.subtitle-text {
+    -fx-text-fill: #9e9e9e;
+}
+
+.field-label {
+    -fx-text-alignment: left;
+    -fx-text-fill: #616161;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 4px;
+    -fx-border-color: transparent;
+    -fx-padding: 10 15 10 15;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-background-color: #eeeeee;
+    -fx-border-color: #c87941;
+    -fx-border-width: 0 0 2 0;
+}
+
+.remember-checkbox {
+    -fx-text-fill: #616161;
+}
+
+.forgot-password {
+    -fx-text-fill: #c87941;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+
+.forgot-password:hover {
+    -fx-text-fill: #a15c2b;
+}
+
+.login-button {
+    -fx-background-color: #c87941;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 12 20 12 20;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #a15c2b;
+}
+
+.login-button:pressed {
+    -fx-background-color: #7b4320;
+}
