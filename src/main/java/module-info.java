@@ -15,4 +15,6 @@ module com.bugeverywhere.coffeemanagementapp {
 
     opens com.bugeverywhere.coffeemanagementapp to javafx.fxml;
     exports com.bugeverywhere.coffeemanagementapp;
+    exports com.bugeverywhere.coffeemanagementapp.viewmodel;
+    opens com.bugeverywhere.coffeemanagementapp.viewmodel to javafx.fxml;
 }

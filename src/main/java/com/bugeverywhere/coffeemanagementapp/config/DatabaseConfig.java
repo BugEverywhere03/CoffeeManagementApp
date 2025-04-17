@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class DatabaseConfig {
     private static DatabaseConfig instance = null;
-    private static final String URL_PATH = "jdbc:mysql://localhost:3306/coffeedb?user=root&password=123456&trustServerCertificate=true&useSSL=false";
+    private static final String URL_PATH = "jdbc:mysql://localhost:3306/coffeedb?user=root&password=123456&trustServerCertificate=true&useSSL=false&&allowPublicKeyRetrieval=true";
     private Connection connection = null;
     private DatabaseConfig() {
         try {

@@ -80,7 +80,8 @@
           <artifactId>*</artifactId>
         </exclusion>
       </exclusions>
-    </dependency><dependency>
+    </dependency>
+    <dependency>
       <groupId>com.github.almasb</groupId>
       <artifactId>fxgl</artifactId>
       <version>17.3</version>
@@ -115,6 +116,11 @@
       <groupId>com.mysql</groupId>
       <artifactId>mysql-connector-j</artifactId>
       <version>9.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>de.jensd</groupId>
+      <artifactId>fontawesomefx-fontawesome</artifactId>
+      <version>4.7.0-9.1.2</version>
     </dependency>
   </dependencies>
 

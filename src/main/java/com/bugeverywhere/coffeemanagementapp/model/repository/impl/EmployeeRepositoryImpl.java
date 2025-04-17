@@ -12,13 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeRepositoryImpl implements ICommon<Employee>, IAccount {
-    private DatabaseConfig databaseConfig = DatabaseConfig.getInstance();
+    private final DatabaseConfig databaseConfig = DatabaseConfig.getInstance();
     @Override
     public List<Employee> findAll(){
         List<Employee> lst = new ArrayList<>();
-        Connection connetion = databaseConfig.getConnection();
+        Connection connection = databaseConfig.getConnection();
         String query = "SELECT EmployeeID, EmployeeName FROM Employee";
-        try (PreparedStatement cmd = connetion.prepareStatement(query)){
+        try (PreparedStatement cmd = connection.prepareStatement(query)){
             ResultSet rs = cmd.executeQuery();
             while (rs.next()){
                 int employeeID = rs.getInt(1);
@@ -26,7 +26,7 @@ public class EmployeeRepositoryImpl implements ICommon<Employee>, IAccount {
                 lst.add(new Employee(employeeID, employeeName, null, null, null));
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         return lst;
     }
@@ -43,9 +43,10 @@ public class EmployeeRepositoryImpl implements ICommon<Employee>, IAccount {
 
     @Override
     public boolean checkLogin(String userName, String password) {
-        boolean isExists = false;
+
         Connection connection = databaseConfig.getConnection();
         String query = "SELECT userName from Employee where userName = ? and password = ? LIMIT 1";
+        boolean isExists = false;
         try (PreparedStatement cmd = connection.prepareStatement(query)){
             cmd.setString(1, userName);
             cmd.setString(2, password);

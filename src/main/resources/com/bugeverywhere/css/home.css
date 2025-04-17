@@ -1,0 +1,225 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.menu-item {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 40px;
+}
+.tab-pane {
+    -fx-background-color: #f0f0f0; /* Màu nền của toàn bộ TabPane */
+}
+.context-menu {
+    -fx-pref-width: 250px;
+    -fx-min-width: 250px;
+    -fx-max-width: 250px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+.menu-button-without-arrow .arrow {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-shape: "";
+}
+.menu-button-without-arrow{
+    -fx-border-radius: 0px;
+}
+.custom-tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-min-height: 60px;
+    -fx-tab-max-height: 60px;
+    -fx-tab-max-width:  120px;
+    -fx-background-color: #ffffff;
+}
+
+.custom-tab {
+    -fx-background-color: white;
+    -fx-background-radius: 5 5 0 0;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+.button {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+    -fx-border-color: #000000;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 0 0 0 0;
+}
+.button-table {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-border-color: green;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5 5 5 5;
+    -fx-min-width: 200px;
+    -fx-min-height: 110px;
+    -fx-font-size: 24px;
+    -fx-font-family: Consolas;
+    -fx-font-weight: bold;
+}
+.button-takeaway{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-border-color: green;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5 5 5 5;
+    -fx-min-width: 180px;
+    -fx-min-height: 180px;
+    -fx-font-size: 24px;
+    -fx-font-family: Consolas;
+    -fx-font-weight: bold;
+}
+/* Root styles for consistent typography and background */
+.root {
+    -fx-font-family: "Roboto", "Arial", sans-serif;
+    -fx-background-color: #F5F5F5; /* Light cream background for the app */
+}
+
+/* GridPane styling for better spacing */
+.grid-pane {
+    -fx-padding: 10px;
+    -fx-background-color: #F5F5F5;
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+}
+
+/* TabPane styling */
+
+
+
+.menu-button-without-arrow:hover {
+    -fx-background-color: #6B4A2F;
+    -fx-cursor: hand;
+}
+
+
+.menu-button-without-arrow .menu-item:hover {
+    -fx-background-color: #F5E8D3; /* Light coffee cream */
+}
+
+/* FontAwesomeIconView for MenuButton */
+.my-button .font-awesome-icon-view {
+    -fx-fill: #FFFFFF;
+    -fx-opacity: 0.8;
+}
+
+.my-button:hover .font-awesome-icon-view {
+    -fx-opacity: 1.0;
+}
+
+/* General Button styling */
+.my-button, .button {
+    -fx-background-color: #4A2F1A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 1px;
+    -fx-padding: 10px 20px;
+    -fx-opacity: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 2, 2);
+}
+
+.my-button:hover, .button:hover {
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-opacity: 1;
+}
+.my-button:focused{
+    -fx-opacity: 0.5;
+}
+
+/* Specific styling for "Thêm hóa đơn" button */
+.button[style*="-fx-border-color: green"] {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #00800B;
+    -fx-border-color: #00800B;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-font-size: 20px;
+    -fx-padding: 15px;
+}
+
+.button[style*="-fx-border-color: green"]:hover {
+    -fx-background-color: #E8F5E9; /* Light green */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Table buttons (Tại Quán) */
+.button-table {
+    -fx-background-color: #8B6F47; /* Medium coffee brown */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 15px;
+    -fx-min-width: 110px;
+    -fx-min-height: 110px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 2, 2);
+}
+
+.button-table:hover {
+    -fx-background-color: #A68A64;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Takeaway buttons (Mang Về) */
+.button-takeaway {
+    -fx-background-color: #D4A373; /* Light coffee tone */
+    -fx-text-fill: #333333;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 20px;
+    -fx-min-width: 150px;
+    -fx-min-height: 100px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 2, 2);
+}
+
+.button-takeaway:hover {
+    -fx-background-color: #E8C39E;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+}
+
+/* ScrollPane styling */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 2px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 5px;
+}
+
+
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #A68A64;
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #8B6F47;
+}
+
+/* AnchorPane inside ScrollPane */
+.anchor-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 5px;
+}
+
+/* Remove grid lines for a cleaner look */
+.grid-pane[gridLinesVisible="true"] {
+    -fx-grid-lines-visible: false;
+}

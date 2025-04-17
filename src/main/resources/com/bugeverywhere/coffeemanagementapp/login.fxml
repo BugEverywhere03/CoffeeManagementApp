@@ -8,7 +8,7 @@
 <?import javafx.scene.text.*?>
 
 <StackPane prefHeight="600" prefWidth="900" styleClass="background" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="com.bugeverywhere.coffeemanagementapp.LoginController">
+           fx:controller="com.bugeverywhere.coffeemanagementapp.viewmodel.LoginController">
 
   <stylesheets>
     <URL value="@../css/login.css" />
@@ -68,7 +68,7 @@
         </VBox.margin>
         <Region HBox.hgrow="ALWAYS" />
       </HBox>
-      <Label fx:id="messageLabel" alignment="CENTER" prefHeight="18.0" prefWidth="314.0" styleClass="subtitle-text"  textAlignment="CENTER"></Label>
+      <Label fx:id="messageLabel" alignment="CENTER" prefHeight="18.0" prefWidth="314.0" styleClass="message-text"  textAlignment="CENTER"></Label>
 
       <!-- Login button -->
       <Button fx:id="loginButton" maxWidth="Infinity" styleClass="login-button" text="LOGIN" onMouseClicked="#onLoginButtonClick">

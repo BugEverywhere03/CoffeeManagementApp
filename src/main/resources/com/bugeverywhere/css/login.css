@@ -89,3 +89,11 @@
 .login-button:pressed {
     -fx-background-color: #7b4320;
 }
+.message-text {
+    -fx-background-color: white ;
+    -fx-text-fill: #dc3545;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}

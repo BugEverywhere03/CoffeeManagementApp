@@ -7,7 +7,7 @@ import com.bugeverywhere.coffeemanagementapp.model.repository.impl.EmployeeRepos
 import java.util.List;
 
 public class EmployeeService {
-    private ICommon<Employee> employeeRepository = new EmployeeRepositoryImpl();
+    private final ICommon<Employee> employeeRepository = new EmployeeRepositoryImpl();
 
     public boolean updateEmployee(Employee employee) {
         return employeeRepository.save(employee);
