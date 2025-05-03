@@ -144,7 +144,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.bugeverywhere.coffeemanagementapp/com.bugeverywhere.coffeemanagementapp.LoginApplication</mainClass>
+              <mainClass>com.bugeverywhere.coffeemanagementapp/com.bugeverywhere.app.Application</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>

@@ -1,8 +1,6 @@
-module com.bugeverywhere.coffeemanagementapp {
+module com.bugeverywhere.app {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
-
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
@@ -13,8 +11,8 @@ module com.bugeverywhere.coffeemanagementapp {
     requires static lombok;
     requires java.sql;
 
-    opens com.bugeverywhere.coffeemanagementapp to javafx.fxml;
-    exports com.bugeverywhere.coffeemanagementapp;
-    exports com.bugeverywhere.coffeemanagementapp.viewmodel;
-    opens com.bugeverywhere.coffeemanagementapp.viewmodel to javafx.fxml;
+    opens com.bugeverywhere.app to javafx.fxml;
+    exports com.bugeverywhere.app;
+    exports com.bugeverywhere.app.viewmodel;
+    opens com.bugeverywhere.app.viewmodel to javafx.fxml;
 }
