@@ -30,16 +30,33 @@
     -fx-tab-min-width: 120px;
     -fx-tab-min-height: 60px;
     -fx-tab-max-height: 60px;
-    -fx-tab-max-width:  120px;
+    -fx-tab-max-width: 120px;
     -fx-background-color: #ffffff;
 }
 
 .custom-tab {
     -fx-background-color: white;
-    -fx-background-radius: 5 5 0 0;
+    -fx-background-radius: 5;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: black;
+    -fx-padding: 0 5px 0 5px;
+    -fx-margin: 0 5px 0 0;
+}
+.custom-tab:selected{
+    -fx-background-color: #ffff0f;
+    -fx-background-radius: 5;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-padding: 0 5px 0 5px;
+    -fx-margin: 0 5px 0 0;
 }
 .button {
     -fx-background-color: #f0f0f0;
@@ -116,10 +133,11 @@
     -fx-text-fill: #FFFFFF;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-border-radius: 1px;
     -fx-padding: 10px 20px;
     -fx-opacity: 1.0;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 2, 2);
+    -fx-border-color: #4A2F1A;
+    -fx-border-width: 0 1px 0 0;
 }
 
 .my-button:hover, .button:hover {
@@ -222,4 +240,13 @@
 /* Remove grid lines for a cleaner look */
 .grid-pane[gridLinesVisible="true"] {
     -fx-grid-lines-visible: false;
+}
+.tab-pane .tab-header-background {
+    -fx-background-color: white;
+}
+.tab-pane .tab-header-area {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-width: 5;
+    -fx-padding: 0;
 }

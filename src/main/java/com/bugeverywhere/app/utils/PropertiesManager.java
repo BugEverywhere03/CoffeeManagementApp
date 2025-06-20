@@ -3,10 +3,11 @@ package com.bugeverywhere.app.utils;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.Properties;
 
 public class PropertiesManager {
-    private static Properties databaseProperties = new Properties();
+    private static final Properties databaseProperties = new Properties();
     private static final String DATABASE_PROPERTIES_FILE_PATH = "/com/bugeverywhere/app/config/database.properties";
 
     static {

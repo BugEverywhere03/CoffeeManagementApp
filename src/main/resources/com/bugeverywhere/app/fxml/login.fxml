@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import java.net.URL?>
 <StackPane prefHeight="600" prefWidth="900" styleClass="background" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="com.bugeverywhere.app.viewmodel.LoginController">
+           fx:controller="com.bugeverywhere.app.view.LoginController">
 
   <stylesheets>
     <URL value="@../css/login.css" />

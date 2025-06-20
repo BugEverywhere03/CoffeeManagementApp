@@ -15,4 +15,6 @@ module com.bugeverywhere.app {
     exports com.bugeverywhere.app;
     exports com.bugeverywhere.app.viewmodel;
     opens com.bugeverywhere.app.viewmodel to javafx.fxml;
+    exports com.bugeverywhere.app.view;
+    opens com.bugeverywhere.app.view to javafx.fxml;
 }

@@ -13,5 +13,4 @@ public class Employee {
     private String employeeName;
     private String userName;
     private String password;
-    private List<Role> employeeRoles;
 }

@@ -13,10 +13,6 @@ public class Invoice {
     private int invoiceID;
     private int customerID;
     private int tableID;
-    private String customerRole;
-    private String paymentMethod;
-    private double totalPrice;
+    private boolean inStore;
     private LocalDateTime invoiceDate;
-    private int discount;
-    private double finalPrice;
 }
